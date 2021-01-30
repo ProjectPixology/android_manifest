@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="pixology"
+           fetch="https://github.com/ProjectPixology"
+           revision="eleven" />
+
+  <!-- Build -->
+<!-- Build -->
+  <project path="build/make" name="build" groups="pdk" remote="pixology" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="pixology" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Build -->
+  <project path="bionic" name="android_bionic" remote="pixology" />
+
+  <!-- External -->
+  <project path="external/selinux" name="android_external_selinux" remote="pixology" />
+  <project path="external/pulse" name="android_external_pulse" remote="pixology" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="pixology" />
+
+ <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="pixology" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="pixology" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="pixology" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="pixology" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="pixology" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="pixology" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="pixology" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="pixology" />
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="pixology" />
+
+  <!-- Packages -->
+  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="pixology" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="pixology" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="pixology"/>
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pixology"/>
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="pixology"/>
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="pixlogy"/>
+  <project path="packages/apps/PermissionController" name="android_packages_apps_PermissionController" remote="pixology"/>
+  <project path="packages/apps/CustomDoze" name="android_packages_apps_CustomDoze" remote="pixology"/>
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="pixology"/>
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="pixlogy"/>
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="pixlogy"/>
+  <project path="packages/apps/Launcher3" name="android_packages_apps_CustomDoze" remote="pixology"/>
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="pixology"/>
+  <project path="android_packages_providers_DownloadProvider" name="android_packages_providers_DownloadProvider" remote="pixlogy"/>
+
+  <!-- Maintenance -->
+  <project path="android/maintenance" name="android_maintenance" remote="pixology"/>
+  <project path="android/manifest" name="android_manifest" remote="pixology"/>
+
+  <!-- System -->
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="pixology" />
+  <project path="system/bt" name="android_system_bt" remote="pixology" />
+  <project path="system/vold" name="android_system_vold" remote="pixology" />
+  <project path="system/netd" name="android_system_netd" remote="pixology" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="pixology" />
+
+  <!-- Vendor -->
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="pixology" />
+
+</manifest>
