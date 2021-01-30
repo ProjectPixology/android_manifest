@@ -9,7 +9,7 @@ familiar with [Repo](https://source.android.com/source/using-repo.html) & [Versi
 
 To install the sources onto your system, you will need to first run
 ```bash
-repo init -u git://github.com/ProjectPixology/android_manifest.git -b eleven
+repo init -u https://github.com/ProjectPixology/android_manifest.git -b eleven
 ```
 Then to sync up:
 ```bash
