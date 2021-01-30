@@ -60,6 +60,7 @@
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/icu" />
   <remove-project name="platform/external/cldr" />
+  <remove-project name="platform/external/chromium-webview" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
