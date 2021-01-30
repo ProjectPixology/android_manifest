@@ -2,6 +2,7 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/ProjectPixology/android_maintenance/eleven/banners/ic_logo.png" > 
 </p>
+
 Welcome to pixology.
 ===========
 
