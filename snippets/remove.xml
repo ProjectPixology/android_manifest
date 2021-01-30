@@ -94,7 +94,7 @@
   <remove-project name="platform/packages/apps/Contacts" />
   <remove-project name="platform/packages/apps/Gallery2" />
   <remove-project name="platform/packages/apps/Camera2" />
-  <remove-project name="platform/packages/apps/PermissionController" />
+  <remove-project name="platform/packages/apps/PackageInstaller" />
   <remove-project name="platform/packages/apps/SoundRecorder" />
 
   <!-- Prebuilts -->
